@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(12, 64px);
+  gap: 4px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tile {
+  width: 64px;
+  height: 96px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tile.selected {
+  transform: scale(1.1);
+  border-color: #0078d7;
+}
